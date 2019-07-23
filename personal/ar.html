@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<script type="text/javascript" src="js/aframe.js"></script>
+<script type="text/javascript" src="js/ar.js"></script>
+<!--script type="text/javascript" src="js/three.js"></script-->
+<!--script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js"></script-->
+<script type="text/javascript" src="js/my_event.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene stats embedded arjs="debugUIEnabled: false; sourceType: webcam; detectionMode: mono; maxDetectionRate:30; canvasWidth:240; canvasHeight:180;">
+      <a-marker emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset='custom' type="pattern" url="assets/dream_big.patt">
+          <!--a-entity id="animated-model" obj-model="obj: url(assets/IronMan.obj); mtl: url(assets/IronMan.mtl);" scale="0.01 0.01 0.01" position="0 -2 1" rotation="-90 90 -90"></a-entity-->
+              <a-box position='-1 0 -1' scale="0.05 0.05 4" material='color:black'></a-box>
+              <a-box  id="box1" position='-0.25 0 0.5' material='color: yellow;' scale="0.5 0.5 1"></a-box>
+              <a-entity id="popup" gltf-model="url(popup.gltf)" rotation="-90 0 0" position="-0.25 0 -0.5"
+            visible="false"></a-entity>
+              <a-text position="-0.25 0 1.5" rotation="0 0 -0" value="2005" color="black"></a-text>
+              <a-sphere id="sphere1" visible='false' position="-0.25 0 -0.5" scale="0.25 0.25 0.25" material='color:blue;'></a-sphere>
+              <a-box  id="box2" position='0.5 0 0.25' material='color: orange;' scale="0.5 0.5 1.5"></a-box>
+              <a-sphere id="sphere2" visible='false' position="0.5 0 -1" scale="0.25 0.25 0.25" material='color:blue;'></a-sphere>
+              <a-box  id="box3" position='1.25 0 0' material='color: green;' scale="0.5 0.5 2"></a-box>
+              <a-sphere id="sphere3" visible='false' position="1.25 0 -1.5" scale="0.25 0.25 0.25" material='color:blue;'></a-sphere>
+              <a-box  id="box4" position='2 0 0.625' material='color: red;' scale="0.5 0.5 0.75"></a-box>
+              <a-sphere id="sphere4" visible='false' position="2 0 -0.25" scale="0.25 0.25 0.25" material='color:blue;'></a-sphere>
+              <a-box  id="box5" position='2.75 0 -0.5' material='color: white;' scale="0.5 0.5 3"></a-box>
+              <a-sphere id="sphere5" visible='false' position="2.75 0 -2.5" scale="0.25 0.25 0.25" material='color:blue;'></a-sphere>
+              <a-box position='1.5 0 1' scale="5 0.05 0.05" material='color:black'></a-box>
+                <!--a-box
+                  position="0 0 0"
+                  scale="2 2 2"
+                  material="color: orange;"
+                  animation-mixer="
+                    clip:idle;
+                    loop: repeat;
+                    two-finger-spin">   
+            </a-box-->
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
