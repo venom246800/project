@@ -334,17 +334,55 @@
 <body style='margin : 0px; overflow: hidden;'>
     <!-- BUTTONS -->
     <!-- play/pause Button -->
-    <div class="playBtn" id="playBtn" onclick="playFunction()">PLAY/PAUSE</div>
+    <button class="btn1" onclick="playFunction()">
+      <span>
+        PLAY/PAUSE
+      </span>
+    </button>
     <!-- info button -->
-    <div class="infoBtn" id="infoBtn" onclick="infoFunction()">INFO</div> 
+    <button class="btn2" onclick="infoFunction()">
+      <span>
+        INFORMATION
+      </span>
+    </button>
+    <!-- <div class="playBtn" id="playBtn" onclick="playFunction()">PLAY/PAUSE</div>
+    <div class="infoBtn" id="infoBtn" onclick="infoFunction()">INFO</div> --> 
     <!-- year 2016 button -->
-    <div class="year16" id="year16" onclick="year16Function()">2016</div> 
+    <button class="btn3" onclick="year16Function()">
+      <span>
+        <i class="fa fa-bar-chart">
+          <b>2016</b>
+        </i>
+      </span>
+    </button>
+
     <!-- year 2017 button -->
-    <div class="year17" id="year17" onclick="year17Function()">2017</div> 
+    <button class="btn4" onclick="year17Function()">
+      <span>
+        <i class="fa fa-bar-chart">
+          <b>2017</b>
+        </i>
+      </span>
+    </button>
+    <!-- <div class="year17" id="year17" onclick="year17Function()"><i class="fa fa-bar-chart"><b>  2017</b></i></div> --> 
     <!-- year 2018 button -->
-    <div class="year18" id="year18" onclick="year18Function()">2018</div> 
+    <button class="btn5" onclick="year18Function()">
+      <span>
+        <i class="fa fa-bar-chart">
+          <b>2018</b>
+        </i>
+      </span>
+    </button>
+    <!-- <div class="year18" id="year18" onclick="year18Function()"><i class="fa fa-bar-chart"><b>  2018</b></i></div>  -->
     <!-- year 2019 button -->
-    <div class="year19" id="year19" onclick="year19Function()">2019</div> 
+    <button class="btn6" onclick="year19Function()">
+      <span>
+        <i class="fa fa-bar-chart">
+          <b>2019</b>
+        </i>
+      </span>
+    </button>
+    <!-- <div class="year19" id="year19" onclick="year19Function()"><i class="fa fa-bar-chart"><b>  2019</b></i></div> --> 
         
 
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
